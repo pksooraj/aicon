@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="400" height="300" fill="url(#bg-gradient)" />
+  
+  <!-- Website mockup -->
+  <rect x="75" y="50" width="250" height="200" rx="5" fill="#f8fafc" />
+  
+  <!-- Website header -->
+  <rect x="75" y="50" width="250" height="40" rx="5" fill="url(#accent-gradient)" />
+  
+  <!-- Navigation items -->
+  <g fill="#f8fafc">
+    <rect x="200" y="65" width="30" height="10" rx="2" />
+    <rect x="240" y="65" width="30" height="10" rx="2" />
+    <rect x="280" y="65" width="30" height="10" rx="2" />
+  </g>
+  
+  <!-- Logo placeholder -->
+  <rect x="90" y="60" width="50" height="20" rx="3" fill="#f8fafc" />
+  
+  <!-- Content area -->
+  <g>
+    <!-- Hero section -->
+    <rect x="90" y="110" width="220" height="60" rx="3" fill="#e2e8f0" />
+    <rect x="100" y="120" width="120" height="10" rx="2" fill="#334155" />
+    <rect x="100" y="140" width="80" height="8" rx="2" fill="#475569" />
+    <rect x="100" y="155" width="60" height="8" rx="2" fill="#475569" />
+    
+    <!-- Features section -->
+    <g>
+      <rect x="90" y="190" width="65" height="40" rx="3" fill="#e2e8f0" />
+      <rect x="165" y="190" width="65" height="40" rx="3" fill="#e2e8f0" />
+      <rect x="240" y="190" width="65" height="40" rx="3" fill="#e2e8f0" />
+    </g>
+  </g>
+  
+  <!-- Project title -->
+  <text x="200" y="275" font-family="Arial, sans-serif" font-size="14" fill="#f8fafc" text-anchor="middle">Responsive Website Design</text>
+</svg>

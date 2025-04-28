@@ -1,0 +1,30 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa" rx="5" ry="5"/>
+  
+  <!-- Bakery Elements -->
+  <rect x="50" y="50" width="300" height="200" rx="5" ry="5" fill="#e9ecef"/>
+  
+  <!-- Cake -->
+  <circle cx="200" cy="130" r="60" fill="#4cc9f0" opacity="0.6"/>
+  <circle cx="200" cy="130" r="40" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="200" cy="90" r="5" fill="#4361ee"/>
+  <circle cx="180" cy="110" r="5" fill="#4361ee"/>
+  <circle cx="220" cy="110" r="5" fill="#4361ee"/>
+  <circle cx="170" cy="130" r="5" fill="#4361ee"/>
+  <circle cx="230" cy="130" r="5" fill="#4361ee"/>
+  <circle cx="180" cy="150" r="5" fill="#4361ee"/>
+  <circle cx="220" cy="150" r="5" fill="#4361ee"/>
+  <circle cx="200" cy="170" r="5" fill="#4361ee"/>
+  
+  <!-- Plate -->
+  <ellipse cx="200" cy="200" rx="80" ry="20" fill="#dee2e6"/>
+  
+  <!-- Text Elements -->
+  <rect x="100" y="220" width="200" height="20" rx="3" ry="3" fill="#dee2e6"/>
+  <rect x="150" y="250" width="100" height="10" rx="3" ry="3" fill="#dee2e6"/>
+  
+  <text x="200" y="270" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">Sweet Delights Bakery</text>
+</svg>

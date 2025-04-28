@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="400" height="300" fill="url(#bg-gradient)" />
+  
+  <!-- Mobile app mockup -->
+  <rect x="150" y="40" width="100" height="200" rx="10" fill="#0f172a" stroke="#f8fafc" stroke-width="2" />
+  
+  <!-- Screen -->
+  <rect x="155" y="50" width="90" height="170" rx="5" fill="#f8fafc" />
+  
+  <!-- App UI elements -->
+  <g>
+    <!-- App header -->
+    <rect x="155" y="50" width="90" height="25" rx="5" fill="url(#accent-gradient)" />
+    <circle cx="170" cy="62.5" r="5" fill="#f8fafc" />
+    <rect x="180" y="60" width="40" height="5" rx="2" fill="#f8fafc" />
+    
+    <!-- App content -->
+    <g>
+      <!-- Navigation tabs -->
+      <rect x="155" y="195" width="90" height="25" rx="5" fill="#e2e8f0" />
+      <circle cx="175" cy="207.5" r="5" fill="#06b6d4" />
+      <circle cx="200" cy="207.5" r="5" fill="#475569" />
+      <circle cx="225" cy="207.5" r="5" fill="#475569" />
+      
+      <!-- Content items -->
+      <rect x="165" y="85" width="70" height="15" rx="2" fill="#e2e8f0" />
+      <rect x="165" y="110" width="70" height="15" rx="2" fill="#e2e8f0" />
+      <rect x="165" y="135" width="70" height="15" rx="2" fill="#e2e8f0" />
+      <rect x="165" y="160" width="70" height="15" rx="2" fill="#e2e8f0" />
+    </g>
+  </g>
+  
+  <!-- Home button -->
+  <circle cx="200" cy="230" r="8" fill="#f8fafc" stroke="#0f172a" stroke-width="1" />
+  
+  <!-- Project title -->
+  <text x="200" y="275" font-family="Arial, sans-serif" font-size="14" fill="#f8fafc" text-anchor="middle">Mobile App Development</text>
+</svg>

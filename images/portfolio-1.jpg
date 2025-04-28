@@ -1,0 +1,21 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa" rx="5" ry="5"/>
+  
+  <!-- Cafe Elements -->
+  <rect x="50" y="80" width="300" height="150" rx="5" ry="5" fill="#e9ecef"/>
+  
+  <!-- Coffee Cup -->
+  <circle cx="200" cy="150" r="50" fill="#4361ee" opacity="0.8"/>
+  <path d="M160 180 Q 200 200 240 180" stroke="#ffffff" stroke-width="5" fill="transparent"/>
+  
+  <!-- Steam -->
+  <path d="M190 100 Q 200 80 210 100" stroke="#718096" stroke-width="2" fill="transparent"/>
+  <path d="M200 100 Q 210 80 220 100" stroke="#718096" stroke-width="2" fill="transparent"/>
+  
+  <!-- Text Elements -->
+  <rect x="100" y="220" width="200" height="20" rx="3" ry="3" fill="#dee2e6"/>
+  <rect x="150" y="250" width="100" height="10" rx="3" ry="3" fill="#dee2e6"/>
+  
+  <text x="200" y="270" font-family="Arial" font-size="12" fill="#495057" text-anchor="middle">Sunrise Cafe</text>
+</svg>

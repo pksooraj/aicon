@@ -1,0 +1,59 @@
+/* Counter Section Styles */
+.counter-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--light-text);
+    padding: 60px 0;
+    margin: 40px 0;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.counter-box {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.counter-box:hover {
+    transform: translateY(-10px);
+}
+
+.counter-box i {
+    color: var(--light-text);
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.counter-box h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--light-text);
+}
+
+.counter-box p {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    opacity: 0.9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .counter-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+}
