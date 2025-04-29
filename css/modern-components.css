@@ -1,0 +1,564 @@
+/* Modern Components CSS - Additional styles for Aicon Tech website */
+
+/* Portfolio Filter */
+.portfolio-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background-color: var(--bg-secondary);
+    border: none;
+    border-radius: 30px;
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-normal);
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Blog Cards */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.blog-card {
+    overflow: hidden;
+    transition: var(--transition-normal);
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+.blog-category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.blog-date i {
+    margin-right: 5px;
+}
+
+.blog-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Blog Page Styles */
+.blog-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.blog-meta i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+.blog-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-widget {
+    margin-bottom: 30px;
+    padding: 25px;
+}
+
+.sidebar-widget h3 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.category-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.category-list a {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-primary);
+}
+
+.category-list a:hover {
+    color: var(--primary-color);
+}
+
+.recent-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.recent-post {
+    display: flex;
+    gap: 15px;
+}
+
+.recent-post img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.recent-post h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.recent-post span {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-cloud a {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: var(--transition-normal);
+}
+
+.tag-cloud a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-radius: 5px;
+    transition: var(--transition-normal);
+}
+
+.pagination a.active, .pagination a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Profile Page Styles */
+.about-wrapper, .mission-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.mission-box {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.mission-box h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.mission-box ul {
+    padding-left: 20px;
+}
+
+.mission-box li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    text-align: center;
+    overflow: hidden;
+}
+
+.member-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+}
+
+.member-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.member-social {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: bottom 0.3s ease;
+}
+
+.team-member:hover .member-social {
+    bottom: 0;
+}
+
+.member-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 50%;
+    transition: var(--transition-normal);
+}
+
+.member-social a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-role {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.breadcrumbs a {
+    color: var(--text-light);
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* CTA Section */
+.cta-section {
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    color: var(--text-light);
+    overflow: hidden;
+}
+
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/hero-image-adox.svg');
+}
+
+.parallax-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--parallax-overlay);
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-md);
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+}
+
+.theme-toggle:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .blog-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-wrapper, .mission-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .mission-image {
+        order: -1;
+    }
+    
+    .cta-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .about-stats {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .stat-item {
+        flex: 1 0 40%;
+    }
+    
+    .back-to-top, .theme-toggle {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-item {
+        flex: 1 0 100%;
+        text-align: center;
+    }
+}

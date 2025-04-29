@@ -18,6 +18,7 @@
     <title>Aicon Tech - Digital Solutions for Small Businesses</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/modern-components.css">
     <link rel="stylesheet" href="css/counter-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,44 +142,50 @@
                 <h2>Our Portfolio</h2>
                 <p>Some of our recent projects for local businesses</p>
             </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
             <div class="portfolio-grid animate-fadeIn" style="animation-delay: 0.2s;">
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="web">
                     <img src="images/portfolio-adox-1.svg" alt="Local Cafe Website">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Sunrise Cafe</h3>
                             <p>Website Design & Social Media</p>
-                            <a href="#" class="btn btn-small btn-secondary">View Project</a>
+                            <a href="#" class="btn btn-small btn-accent">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="ecommerce">
                     <img src="images/portfolio-adox-2.svg" alt="Boutique Shop Website">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Urban Threads</h3>
                             <p>E-Commerce & Brand Identity</p>
-                            <a href="#" class="btn btn-small btn-secondary">View Project</a>
+                            <a href="#" class="btn btn-small btn-accent">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="web branding">
                     <img src="images/portfolio-adox-3.svg" alt="Local Bakery Website">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Sweet Delights Bakery</h3>
                             <p>Website & Online Ordering</p>
-                            <a href="#" class="btn btn-small btn-secondary">View Project</a>
+                            <a href="#" class="btn btn-small btn-accent">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item">
+                <div class="portfolio-item" data-category="web">
                     <img src="images/portfolio-adox-4.svg" alt="Fitness Studio Website">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <h3>Flex Fitness Studio</h3>
                             <p>Website & Booking System</p>
-                            <a href="#" class="btn btn-small btn-secondary">View Project</a>
+                            <a href="#" class="btn btn-small btn-accent">View Project</a>
                         </div>
                     </div>
                 </div>

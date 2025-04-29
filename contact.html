@@ -14,16 +14,17 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Aicon Tech - Premium Digital Solutions">
     <meta name="twitter:description" content="Custom digital solutions for small businesses to thrive online.">
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#4f46e5">
     <title>Contact Us - Aicon Tech</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
+    <link rel="stylesheet" href="css/modern-components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <nav>
                 <div class="logo">
@@ -37,25 +38,32 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="page-header parallax-bg" data-speed="0.5">
+    <section class="page-header">
         <div class="container">
             <h1 class="animate-fadeIn">Get in Touch</h1>
-            <p class="animate-fadeIn" style="animation-delay: 0.3s;">Ready to boost your business's digital presence? Contact us today!</p>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Contact</span>
+            </div>
         </div>
     </section>
 
-    <section class="contact-page">
+    <section class="contact-section">
         <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Ready to boost your business's digital presence? We're here to help!</p>
+            </div>
+            
             <div class="contact-wrapper">
-                <div class="contact-info animate-fadeIn" style="animation-delay: 0.2s;">
+                <div class="contact-info card animate-fadeIn">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
@@ -87,75 +95,87 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrapper animate-fadeIn" style="animation-delay: 0.4s;">
+                <div class="contact-form-wrapper card animate-fadeIn">
                     <h3>Send Us a Message</h3>
                     <form id="contactForm" class="contact-form">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject">
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
             
-            <div class="map-container animate-fadeIn" style="animation-delay: 0.6s;">
-                <h3>Find Us On The Map</h3>
+            <div class="map-container card animate-fadeIn" style="margin-top: 40px;">
+                <h3><i class="fas fa-map-marked-alt"></i> Find Us On The Map</h3>
                 <div class="map-placeholder">
-                    <i class="fas fa-map-marked-alt"></i>
-                    <p>Interactive map would be displayed here</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sus!4v1580234295259!5m2!1sen!2sus" style="border:0; width: 100%; height: 400px;" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq-section">
+    <section class="faq-section bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
                 <p>Find answers to common questions about our services</p>
             </div>
-            <div class="faq-container animate-fadeIn">
-                <div class="faq-item">
+            <div class="faq-container">
+                <div class="faq-item card animate-fadeIn">
                     <div class="faq-question">
-                        <h3>How long does it take to build a website?</h3>
-                        <i class="fas fa-plus"></i>
+                        <h3><i class="fas fa-question-circle"></i> How long does it take to build a website?</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
                         <p>The timeline for website development varies depending on the complexity of the project. A simple website can be completed in 2-3 weeks, while more complex e-commerce sites may take 6-8 weeks. We'll provide you with a specific timeline during our initial consultation.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item card animate-fadeIn">
                     <div class="faq-question">
-                        <h3>What is your pricing structure?</h3>
-                        <i class="fas fa-plus"></i>
+                        <h3><i class="fas fa-dollar-sign"></i> What is your pricing structure?</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
                         <p>We offer customized pricing based on your specific needs. Our packages start at $1,500 for basic websites and increase based on functionality and features. We provide detailed quotes after understanding your requirements.</p>
                     </div>
                 </div>
-                <div class="faq-item">
+                <div class="faq-item card animate-fadeIn">
                     <div class="faq-question">
-                        <h3>Do you offer ongoing maintenance?</h3>
-                        <i class="fas fa-plus"></i>
+                        <h3><i class="fas fa-tools"></i> Do you offer ongoing maintenance?</h3>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
                         <p>Yes, we offer monthly maintenance packages that include updates, security monitoring, backups, and content changes. Our maintenance plans start at $99/month depending on your website's needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item card animate-fadeIn">
+                    <div class="faq-question">
+                        <h3><i class="fas fa-mobile-alt"></i> Are your websites mobile-friendly?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! All our websites are built with a mobile-first approach, ensuring they look and function perfectly on all devices including smartphones, tablets, and desktop computers. We conduct thorough testing on multiple devices before launch.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
@@ -173,8 +193,8 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -187,9 +207,20 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2023 Aicon Tech. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
     </footer>
+
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
