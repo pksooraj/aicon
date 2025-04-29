@@ -14,22 +14,22 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Aicon Tech - Premium Digital Solutions">
     <meta name="twitter:description" content="Custom digital solutions for small businesses to thrive online.">
-    <meta name="theme-color" content="#0056b3">
+    <meta name="theme-color" content="#4f46e5">
     <title>Aicon Tech - Digital Solutions for Small Businesses</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/adox-theme.css">
+    <link rel="stylesheet" href="css/modern-theme.css">
     <link rel="stylesheet" href="css/counter-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <nav>
                 <div class="logo">
-                    <a href="#">Aicon<span>Tech</span></a>
+                    <a href="index.html">Aicon<span>Tech</span></a>
                 </div>
                 <div class="nav-toggle" id="navToggle">
                     <span></span>
@@ -37,93 +37,98 @@
                     <span></span>
                 </div>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section id="home" class="hero">
-        <div class="container">
+        <div class="container d-flex align-items-center">
             <div class="hero-content animate-slideInLeft">
                 <h1 class="animate-fadeIn">Building Digital Presence for Small Businesses</h1>
                 <p class="animate-fadeIn" style="animation-delay: 0.3s;">We help local shops and businesses thrive in the digital world with custom websites and social media strategies.</p>
                 <div class="cta-buttons animate-fadeIn" style="animation-delay: 0.6s;">
-                    <a href="#services" class="btn btn-primary animate-pulse">Our Services</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    <a href="services.html" class="btn btn-accent animate-pulse">Our Services</a>
+                    <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
                 </div>
             </div>
             <div class="hero-image animate-slideInRight">
-                <img src="images/hero-image-adox.svg" alt="Digital Business Solutions">
+                <img src="images/hero-image-adox.svg" alt="Digital Business Solutions" class="animate-float">
             </div>
         </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services" class="services bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Our Services</h2>
                 <p>Tailored digital solutions to help your business grow</p>
             </div>
             <div class="services-grid animate-fadeIn" style="animation-delay: 0.2s;">
-                <div class="service-card">
+                <div class="card service-card">
                     <div class="service-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Website Development</h3>
                     <p>Custom, responsive websites designed to showcase your business and attract more customers.</p>
+                    <a href="services.html#web-development" class="btn btn-small btn-primary mt-3">Learn More</a>
                 </div>
-                <div class="service-card">
+                <div class="card service-card">
                     <div class="service-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
                     <h3>E-Commerce Solutions</h3>
                     <p>Online stores that make selling your products easy and accessible to a wider audience.</p>
+                    <a href="services.html#ecommerce" class="btn btn-small btn-primary mt-3">Learn More</a>
                 </div>
-                <div class="service-card">
+                <div class="card service-card">
                     <div class="service-icon">
                         <i class="fas fa-bullhorn"></i>
                     </div>
                     <h3>Social Media Management</h3>
                     <p>Strategic social media presence to engage with your customers and build your brand.</p>
+                    <a href="services.html#social-media" class="btn btn-small btn-primary mt-3">Learn More</a>
                 </div>
-                <div class="service-card">
+                <div class="card service-card">
                     <div class="service-icon">
                         <i class="fas fa-search"></i>
                     </div>
                     <h3>SEO Optimization</h3>
                     <p>Improve your visibility online and attract more potential customers to your business.</p>
+                    <a href="services.html#seo" class="btn btn-small btn-primary mt-3">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Counter Section -->
-    <section class="counter-section">
+    <!-- Counter Section with Parallax Effect -->
+    <section class="counter-section parallax-section">
+        <div class="parallax-overlay"></div>
         <div class="container">
             <div class="counter-grid">
-                <div class="counter-box">
-                    <i class="fas fa-smile fa-3x"></i>
-                    <h3>450+</h3>
+                <div class="counter-box animate-fadeIn" style="animation-delay: 0.1s;">
+                    <i class="fas fa-smile fa-3x animate-pulse"></i>
+                    <h3 class="counter" data-target="450">0</h3>
                     <p>Happy Clients</p>
                 </div>
-                <div class="counter-box">
-                    <i class="fas fa-project-diagram fa-3x"></i>
-                    <h3>1000+</h3>
+                <div class="counter-box animate-fadeIn" style="animation-delay: 0.2s;">
+                    <i class="fas fa-project-diagram fa-3x animate-pulse"></i>
+                    <h3 class="counter" data-target="1000">0</h3>
                     <p>Projects Launched</p>
                 </div>
-                <div class="counter-box">
-                    <i class="fas fa-clock fa-3x"></i>
-                    <h3>2M</h3>
+                <div class="counter-box animate-fadeIn" style="animation-delay: 0.3s;">
+                    <i class="fas fa-clock fa-3x animate-pulse"></i>
+                    <h3 class="counter" data-target="2000000">0</h3>
                     <p>Hours of Work</p>
                 </div>
-                <div class="counter-box">
-                    <i class="fas fa-award fa-3x"></i>
-                    <h3>25+</h3>
+                <div class="counter-box animate-fadeIn" style="animation-delay: 0.4s;">
+                    <i class="fas fa-award fa-3x animate-pulse"></i>
+                    <h3 class="counter" data-target="25">0</h3>
                     <p>Awards Won</p>
                 </div>
             </div>
@@ -148,41 +153,47 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/portfolio-2.jpg" alt="Boutique Shop Website">
+                    <img src="images/portfolio-adox-2.svg" alt="Boutique Shop Website">
                     <div class="portfolio-overlay">
-                        <h3>Urban Threads</h3>
-                        <p>E-Commerce & Brand Identity</p>
-                        <a href="#" class="btn btn-small">View Project</a>
+                        <div class="portfolio-info">
+                            <h3>Urban Threads</h3>
+                            <p>E-Commerce & Brand Identity</p>
+                            <a href="#" class="btn btn-small btn-secondary">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/portfolio-3.jpg" alt="Local Bakery Website">
+                    <img src="images/portfolio-adox-3.svg" alt="Local Bakery Website">
                     <div class="portfolio-overlay">
-                        <h3>Sweet Delights Bakery</h3>
-                        <p>Website & Online Ordering</p>
-                        <a href="#" class="btn btn-small">View Project</a>
+                        <div class="portfolio-info">
+                            <h3>Sweet Delights Bakery</h3>
+                            <p>Website & Online Ordering</p>
+                            <a href="#" class="btn btn-small btn-secondary">View Project</a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/portfolio-4.jpg" alt="Fitness Studio Website">
+                    <img src="images/portfolio-adox-4.svg" alt="Fitness Studio Website">
                     <div class="portfolio-overlay">
-                        <h3>Flex Fitness Studio</h3>
-                        <p>Website & Booking System</p>
-                        <a href="#" class="btn btn-small">View Project</a>
+                        <div class="portfolio-info">
+                            <h3>Flex Fitness Studio</h3>
+                            <p>Website & Booking System</p>
+                            <a href="#" class="btn btn-small btn-secondary">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Client Testimonials</h2>
                 <p>What our clients say about working with us</p>
             </div>
             <div class="testimonial-slider animate-fadeIn" style="animation-delay: 0.2s;">
-                <div class="testimonial-item">
+                <div class="testimonial-item card">
                     <div class="testimonial-content">
                         <p>"Aicon Tech transformed our small bakery's online presence. Our website now brings in new customers every week, and their social media management has helped us build a loyal following."</p>
                     </div>
@@ -201,18 +212,75 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-item">
+                <div class="testimonial-item card">
                     <div class="testimonial-content">
                         <p>"Working with Aicon Tech was the best business decision we made this year. They understood our vision and created a website that perfectly represents our brand and has significantly increased our online sales."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="images/testimonial-2.jpg" alt="Michael Chen">
+                        <img src="images/testimonial-2-new.svg" alt="Michael Chen">
                         <div class="author-info">
                             <h4>Michael Chen</h4>
                             <p>Founder, Urban Threads</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-preview" class="blog-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Blog Posts</h2>
+                <p>Stay updated with our latest insights and tips</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card card animate-fadeIn" style="animation-delay: 0.1s;">
+                    <div class="blog-image">
+                        <img src="images/portfolio-adox-1.svg" alt="Blog Post Image">
+                        <div class="blog-category">Web Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> June 15, 2023</div>
+                        <h3>10 Essential Elements Every Small Business Website Needs</h3>
+                        <p>Discover the key components that make a small business website effective and engaging for visitors.</p>
+                        <a href="blog.html" class="btn btn-small btn-primary mt-3">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card card animate-fadeIn" style="animation-delay: 0.2s;">
+                    <div class="blog-image">
+                        <img src="images/portfolio-adox-2.svg" alt="Blog Post Image">
+                        <div class="blog-category">E-Commerce</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> May 28, 2023</div>
+                        <h3>How to Set Up Your First Online Store: A Beginner's Guide</h3>
+                        <p>Learn the step-by-step process of creating an e-commerce store that converts visitors into customers.</p>
+                        <a href="blog.html" class="btn btn-small btn-primary mt-3">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card card animate-fadeIn" style="animation-delay: 0.3s;">
+                    <div class="blog-image">
+                        <img src="images/portfolio-adox-3.svg" alt="Blog Post Image">
+                        <div class="blog-category">Social Media</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date"><i class="far fa-calendar-alt"></i> April 10, 2023</div>
+                        <h3>Social Media Strategies That Work for Small Local Businesses</h3>
+                        <p>Effective social media tactics that help local businesses connect with their community and grow their customer base.</p>
+                        <a href="blog.html" class="btn btn-small btn-primary mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="blog.html" class="btn btn-secondary">View All Posts</a>
             </div>
         </div>
     </section>
@@ -286,17 +354,17 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#">Aicon<span>Tech</span></a>
+                    <a href="index.html">Aicon<span>Tech</span></a>
                     <p>Building digital presence for small businesses</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-social">
@@ -319,6 +387,112 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
     <script src="js/script.js"></script>
+    <script>
+        // Initialize counter animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounter = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounter, 1);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            });
+        };
+
+        // Portfolio filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category').includes(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Intersection Observer for counter animation
+        const counterSection = document.querySelector('.counter-section');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (counterSection) {
+            counterObserver.observe(counterSection);
+        }
+
+        // Back to top button functionality
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Theme toggle functionality
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

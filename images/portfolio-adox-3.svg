@@ -1,0 +1,26 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="600" height="400" fill="url(#blueGradient)" />
+  
+  <!-- Define gradients -->
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0056b3" />
+      <stop offset="100%" stop-color="#00a0e3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Decorative elements -->
+  <circle cx="450" cy="80" r="60" fill="rgba(255, 255, 255, 0.1)" />
+  <circle cx="150" cy="320" r="80" fill="rgba(255, 255, 255, 0.1)" />
+  
+  <!-- Bakery icon representation -->
+  <path d="M300 120 Q350 80 400 120 Q450 160 400 200 Q350 240 300 200 Q250 160 300 120" fill="rgba(255, 255, 255, 0.2)" />
+  <circle cx="300" cy="200" r="70" fill="rgba(255, 255, 255, 0.2)" />
+  
+  <!-- Bakery elements -->
+  <path d="M270 180 Q300 150 330 180 Q300 210 270 180" fill="rgba(255, 255, 255, 0.4)" />
+  <rect x="260" y="230" width="80" height="20" rx="5" fill="rgba(255, 255, 255, 0.3)" />
+  <circle cx="280" cy="190" r="5" fill="rgba(255, 255, 255, 0.5)" />
+  <circle cx="320" cy="190" r="5" fill="rgba(255, 255, 255, 0.5)" />
+</svg>
